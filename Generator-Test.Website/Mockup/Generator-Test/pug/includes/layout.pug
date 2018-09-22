@@ -1,0 +1,83 @@
+block vars
+    - var pageTitle = 'Index - ' + site.name
+    - var bodyClass
+    - var bodyId
+    - var header    = true
+    - var footer    = true
+
+doctype html
+html.no-js(lang="en" dir="ltr")
+    head
+        meta(charset="utf-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+
+        meta(name="description" content="")
+        meta(name="author" content="")
+
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        meta(name="format-detection" content="telephone=no")
+
+
+        //- Disable tap highlight on IE
+        meta(name="msapplication-tap-highlight" content="no")
+
+
+        //- Open graph
+        meta(property="og:title" content="" + pageTitle )
+        meta(property="og:type" content="website")
+        meta(property="og:image" content="")
+        meta(property="og:url" content="")
+        meta(property="og:site_name" content="" + site.name )
+
+
+        //- Add to homescreen for Chrome on Android
+        //- meta(name="mobile-web-app-capable" content="yes")
+        //- meta(name="application-name" content="#{pageTitle}")
+        //- link(rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png")
+
+        //- Add to homescreen for Safari on iOS
+        //- meta(name="apple-mobile-web-app-capable" content="yes")
+        //- meta(name="apple-mobile-web-app-title" content="#{pageTitle}")
+        //- meta(name="apple-mobile-web-app-status-bar-style" content="black")
+        //- link(rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png")
+
+        //- Tile icon for Win8 (144x144 + tile color)
+        //- meta(name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png")
+        //- meta(name="msapplication-TileColor" content="#2F3BA2")
+        //- meta(name="theme-color" content="#2F3BA2")
+
+        link(rel="dns-prefetch" href="//fonts.googleapis.com")
+        //link(rel="dns-prefetch" href="//google-analytics.com")
+
+        title #{pageTitle}
+
+        //- Stylesheet
+        link(rel="stylesheet" href="/Content/Styles/Generator-Test/screen.min.css" type="text/css" media="all")
+
+        script.
+            //change className of html from .noJS to .hasJS.
+            (function(el){
+                el.className = el.className.replace('no-js', 'has-js');
+            })(document.documentElement);
+
+        block scriptTop
+
+        //- Fav and touch icons
+        link(rel="shortcut icon" href="/favicon.ico?v=" + Date.now())
+
+
+    body(class=bodyClass id=bodyId)
+        if header
+            include header
+
+        main(role="main")
+            block content
+
+        if footer
+            include footer
+
+
+        // Scripts
+        script(type="text/javascript" src="/Content/Scripts/Generator-Test.vendor.bundle.js")
+        script(type="text/javascript" src="/Content/Scripts/Generator-Test.bundle.js")
+        block scriptBottom

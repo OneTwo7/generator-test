@@ -1,0 +1,24 @@
+extends includes/layout
+
+block append vars
+    - var pageTitle = 'tpl-cookieconsent'
+
+block content
+    div#cookieContent(role="alert").cookie-consent
+        div.container
+            div.row
+                div.col-md-10
+                    strong Hjemmesiden bruger cookies
+                    p
+                        | Vi bruger cookies til at måle trafik, så vi kan gøre hjemmesiden mere brugervenlig.
+                        | Du skal klikke på ‘Accepter cookies’ for at komme videre. <a class="more" href="#">Læs mere om Cookies</a>
+                div.col-md-2
+                    a.btn.btn-secondary.js-cookie-accept(href="#") Accepter Cookies
+
+
+
+    section(role="region").section
+        div.container
+            article(role="article")
+                h1.display-4 Cookie consent
+                p.lead This is a demonstration of the cookie consent plugin. If you don't see a banner try clearing your cookies.

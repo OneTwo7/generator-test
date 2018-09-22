@@ -1,0 +1,17 @@
+/*
+ *
+ * Shared base styles
+ *
+ */
+
+// Index file imports all styles files in their intended order for easy mass-inclusion.
+// Should you need specific files, you can easily use separate `@import`s.
+
+// Vendor
+@import 'bootstrap/scss/bootstrap';
+@import '@fancyapps/fancybox/dist/jquery.fancybox';
+
+// Components
+@import 'cookieconsent';
+@import 'loader';
+@import 'print';

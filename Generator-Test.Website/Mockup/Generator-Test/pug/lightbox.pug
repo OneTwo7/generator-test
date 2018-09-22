@@ -1,0 +1,37 @@
+extends includes/layout
+
+block append vars
+    - var pageTitle = 'tpl-lightbox'
+
+block content
+    section(role="region").section
+        article(role="article").container
+            h1.display-4 Lightbox
+            p.lead This is a demonstration of the lightbox by <a href="http://fancyapps.com/fancybox/3/">FancyApps</a>
+
+            hr
+
+            p
+                a.lightbox(href="images/fancybox/1_b.jpg")
+                    img(alt="example1" src="images/fancybox/1_s.jpg")
+
+            pre
+                code
+                    | &lt;a class="lightbox" href="images/fancybox/example/3_b.jpg"&gt;
+                    |   &lt;img alt="example3" src="images/fancybox/example/3_s.jpg" /&gt;
+                    | &lt;/a&gt;
+
+            p
+                a.lightbox-video(href="https://www.youtube.com/watch?v=eCBaLcsMCRs")
+                    img(alt="example2" src="images/fancybox/2_s.jpg")
+
+            pre
+                code
+                    | &lt;a class="lightbox-video" href="images/fancybox/example/3_b.jpg"&gt;
+                    |   &lt;img alt="example3" src="images/fancybox/example/3_s.jpg" /&gt;
+                    | &lt;/a&gt;
+
+
+            h2 Various examples
+
+            a.btn.btn-primary.lightbox-iframe(href="index.html" data-height="532" data-width="935") Iframe
