@@ -31,8 +31,8 @@ export default {
             minChunks: module => module.context && module.context.includes('node_modules')
         }),
         new webpack.ProvidePlugin({
-            'window.jQuery': 'jquery',
-            'window.$': 'jquery'
+            'jQuery': 'jquery',
+            '$': 'jquery'
         }),
         ...global.production ? [new webpack.optimize.UglifyJsPlugin({
             sourceMap: true,
