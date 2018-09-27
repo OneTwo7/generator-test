@@ -1,9 +1,9 @@
 {
-  "name": "Generator-Test",
+  "name": "generator-test",
   "version": "1.0.0",
   "description": "Just give me a taste of that fancy generator",
   "main": "index.html",
-  "homepage": "N/A",
+  "homepage": "https://github.com/onetwo7/generator-test",
   "private": true,
   "author": {
     "name": "Kraftvaerk",
@@ -13,7 +13,7 @@
     {
       "name": "onetwo7",
       "email": "lahoohal@gmail.com",
-      "url": "https://github.com/"
+      "url": "https://github.com/onetwo7"
     }
   ],
   "repository": {

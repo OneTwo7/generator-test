@@ -1,3 +1,17 @@
 header(role="banner").site-header
     nav.navbar.navbar-expand-md.navbar-dark.bg-dark
         a.navbar-brand(href="index.html" title="Go to home") #{site.name}
+        button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation")
+            span.navbar-toggler-icon
+        .collapse.navbar-collapse#navbarCollapse
+            ul.navbar-nav.mr-auto
+                li.nav-item.active
+                    a.nav-link(href="index.html") Home
+                        span.sr-only (current)
+                li.nav-item
+                    a.nav-link(href="#") Link
+                li.nav-item
+                    a.nav-link(href="#") Link
+            form.form-inline.mt-2.mt-md-0
+                input.form-control.mr-sm-2(type="text" placeholder="Search" aria-label="Search")
+                button.btn.btn-outline-success.my-2.my-sm-0(type="submit") Search
