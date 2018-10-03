@@ -40,7 +40,9 @@
     "@fancyapps/fancybox": "latest",
     "bootstrap": "latest",
     "jquery": "latest",
-    "kv.cookieconsent": "1.0.0"
+    "kv.cookieconsent": "1.0.0",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
   },
   "devDependencies": {
     "@babel/core": "latest",
@@ -49,6 +51,7 @@
     "@babel/plugin-transform-modules-commonjs": "latest",
     "@babel/polyfill": "latest",
     "@babel/preset-env": "latest",
+    "@babel/preset-react": "^7.0.0",
     "@babel/register": "latest",
     "ansi-colors": "1.0.1",
     "autoprefixer": "8.0.0",

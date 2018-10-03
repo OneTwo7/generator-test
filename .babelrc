@@ -3,7 +3,8 @@
     ["@babel/env", {
       "modules": false,
       "useBuiltIns": "usage"
-    }]
+    }],
+    "@babel/react"
   ],
   "plugins": [
     "@babel/plugin-transform-modules-commonjs",

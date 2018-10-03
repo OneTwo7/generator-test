@@ -1,7 +1,7 @@
 'use strict';
 
 import $                from 'jquery';
-
+import '../Shared/index';
 import cookieConsent    from '../Shared/cookieconsent/index';
 import lightbox         from '../Shared/lightbox/index';
 

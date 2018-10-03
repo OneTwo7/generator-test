@@ -7760,4 +7760,8 @@ footer {
     page-break-after: auto;
     page-break-inside: avoid; } }
 
+#app {
+  margin: 2rem 0;
+  text-align: center; }
+
 /*# sourceMappingURL=screen.min.css.map */
